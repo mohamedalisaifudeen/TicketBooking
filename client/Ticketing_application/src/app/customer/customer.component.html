@@ -1,0 +1,83 @@
+<h1>Customer Page</h1>
+<div class="card stats">
+    <div class="card-body bdy1">
+        <div class="container ">
+
+            <div class="row">
+                <div class=""></div>
+                <div class="card crd1">
+                    <div class="card-body ">
+                      <h6>Vendor Threads</h6>
+                      <p>{{ latestConfig.total_Tickets }}</p>
+
+
+                </div>
+                </div>
+
+                <div class="card crd1">
+                  <div class="card-body ">
+                    <h6>Number of Customer Threads</h6>
+                    <p>{{ latestConfig.ticket_Release_Rate }}</p>
+
+
+              </div>
+              </div>
+
+            </div>
+            <div class="row">
+                <div class="">
+                <div class="card crd1">
+                    <div class="card-body">
+                      <h6>Customer Retrieval Rate</h6>
+                      <p>{{ latestConfig.customer_retrival_Rate }}</p>
+
+
+                </div>
+                </div>
+
+                <div class="">
+                  <div class="card crd1 crd12">
+                      <div class="card-body">
+                        <h6>Maximum Ticket Capacity </h6>
+                        <p>{{ latestConfig.maximum_capacity }}</p>
+
+                  </div>
+                  </div>
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+    </div>
+  <button class="btn btn-info" (click)="ButtonClick(1)">Start Puchasing</button>
+
+  <div class="tickets">
+    <p class="tic">Tickets Available: {{tickets_Released}}</p>
+    <p class="tic">| Total tickets released: {{ticketReleaseRate}}</p>
+    <p class="tic">| Total tickets purchased: {{ticketPurchaseTotal}}</p>
+  </div>
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Customer</th>
+      <th scope="col">Purchase Count</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let value of ticketsPurchased|keyvalue; let i=index">
+      <th scope="row">{{i+1}}</th>
+      <td>Customer: {{value.key}}</td>
+      <td>{{value.value}}</td>
+
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+
+

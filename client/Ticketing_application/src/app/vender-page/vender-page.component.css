@@ -1,0 +1,65 @@
+.crd-form{
+    width: 35rem;
+
+    padding: 1rem;
+}
+button{
+    width: 31rem !important;
+}
+body{
+    background-color: aliceblue;
+}
+.stats{
+    margin: 3rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 5rem;
+    font-weight: 700;
+}
+p{
+    font-size: 4rem;
+}
+button{
+    width: 25rem;
+    margin-top: 2rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.bdy1{
+    box-shadow: 0 41px 35px rgba(0,0,0,0.2);
+    display: flex;
+}
+.tickets{
+  display: flex;
+  text-align: center;
+}
+
+.tic{
+  font-size: 3rem;
+  margin: 3rem;
+}
+
+.crd1{
+    width: 17rem;
+    margin: 2rem;
+    height: 12rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    margin-right: 15rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+
+.row{
+    display: block;
+}
+.btn_new{
+  width: 100% !important;
+  margin-bottom: 5rem;
+}

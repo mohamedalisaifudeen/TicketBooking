@@ -1,0 +1,38 @@
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+   
+}
+body{
+    background-image: url(../../assets/stars.jpg);
+}
+h1{
+    font-weight: 800;
+    color: aliceblue;
+    font-size: 3.5rem;
+}
+
+h2{
+    color: aliceblue;
+    padding-top: 2rem;
+    font-size: 2.7rem;
+    font-weight: 800;
+
+}
+button{
+    margin: 2rem;
+    height: 4rem;
+    width: 11rem;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+p{
+    position: fixed;
+    bottom: 0;
+    color: aliceblue;
+    font-weight: 500;
+}

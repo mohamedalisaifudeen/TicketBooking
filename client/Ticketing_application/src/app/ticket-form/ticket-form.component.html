@@ -1,0 +1,35 @@
+<div class="card crd-form">
+    <form #configform="ngForm" (ngSubmit)="onSubmit(configform)" >
+      <div class="card-body">
+        <div class="mb-3">
+          <label for="FormControlInput1" class="form-label">Ticket Release Rate</label>
+          <input type="number" min="1"
+          class="form-control" id="FormControlInput1"
+          placeholder="Values in milli secounds"
+          name="total_Tickets"
+          [(ngModel)]="config.total_Tickets"
+          #total_Tickets="ngModel" required>
+        </div>
+
+            <div class="mb-3">
+              <label for="FormControlInput2" class="form-label">Ticket Release Rate</label>
+              <input type="number" min="1"
+              class="form-control" id="FormControlInput2"
+              placeholder="Values in milli secounds"
+              name="ticket_Release_Rate" [(ngModel)]="config.ticket_Release_Rate" #ticket_Release_Rate="ngModel" required>
+            </div>
+            <div class="mb-3">
+              <label for="FormControlInput3" class="form-label">Customer Retrieval Rate</label>
+              <input type="number" min="1" class="form-control" id="FormControlInput3" placeholder="Values in milli secounds"
+              name="customer_retrival_Rate" [(ngModel)]="config.customer_retrival_Rate" #customer_retrival_Rate="ngModel" required>
+            </div>
+            <div class="mb-3">
+              <label for="FormControlInput4" class="form-label">Maximum Ticket Capacity</label>
+              <input type="number" min="1" class="form-control" id="FormControlInput4" placeholder="Enter a whole number"
+              name="maximum_capacity" [(ngModel)]="config.maximum_capacity" #maximum_capacity="ngModel" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+      </form>
+    </div>
